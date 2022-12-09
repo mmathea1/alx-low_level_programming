@@ -1,0 +1,6 @@
+*.swp
+cisfun
+*.s
+*.o
+size32
+size64
