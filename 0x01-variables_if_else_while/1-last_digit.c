@@ -12,21 +12,22 @@
  */
 int main(void)
 {
-	int n;
+	int n, lastDigit;
 	char *text;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	lastDigit = n % 10;
 	/* your code goes there */
-	if (n > 5)
+	if (lastDigit > 5)
 	{
 		text = "and is greater than 5";
 	}
-	else if (n < 6 && n > 0)
+	else if (lastDigit < 6 && lastDigit != 0)
 	{
 		text = "and is less than 6 and not 0";
 	}
-	else if (n == 0)
+	else if (lastDigit == 0)
 	{
 		text = "and is 0";
 	}
@@ -34,7 +35,7 @@ int main(void)
 	{
 		text = "None";
 	}
-	printf("Last digit of %d  %s \n", n, text);
+	printf("Last digit of %d is %d %s \n", n, lastDigit, text);
 
 	return (0);
 }
