@@ -35,7 +35,7 @@ int main(void)
 	{
 		text = "None";
 	}
-	printf("Last digit of %d is %d %s \n", n, lastDigit, text);
+	printf("Last digit of %d is %d %s\n", n, lastDigit, text);
 
 	return (0);
 }
