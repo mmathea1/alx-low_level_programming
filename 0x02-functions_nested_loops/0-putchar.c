@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -11,7 +11,11 @@
 
 int main(void)
 {
+	char text[10] = "_putchar\n";
 	int i;
 
-	_putchar("_putchar");
+	for (i = 0; i < 10; i++)
+		_putchar(text[i]);
+
+	return (0);
 }
