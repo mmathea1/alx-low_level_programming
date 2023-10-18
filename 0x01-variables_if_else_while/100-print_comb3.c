@@ -2,7 +2,7 @@
 
 /**
  * main - Prints all possible different combinations of two digits,
- * 	separate by comma, in ascending order
+ *	separate by comma, in ascending order
  *
  * Return: Always 0.
  *
